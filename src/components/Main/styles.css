@@ -1,0 +1,105 @@
+main {
+    height: calc(100vh - 80px)
+}
+
+.main-container {
+    margin: 0 auto;
+    max-width: 1240px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main-title {
+    text-align: center;
+}
+
+.main-title h1 {
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.main-title p {
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 31px;
+    margin-top: 15px;
+}
+
+.main-title span {
+    color: var(--blue);
+}
+
+.input-area {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+}
+
+.input-area label {
+    font-weight: 500;
+    padding-bottom: 7px;
+}
+
+.input-area input {
+    height: 50px;
+    width: 100%;
+    font-size: 16.5px;
+    background-color: var(--black);
+    border-radius: 6px;
+    color: var(--white);
+    padding: 0 25px;
+    margin-bottom: 15px;
+}
+
+.input-area input::placeholder {
+    color: var(--white);
+}
+
+button {
+    cursor: pointer;
+    color: var(--white);
+    background-color: var(--blue);
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    padding: 14px;
+    border-radius: 6px;
+    margin-top: 15px;
+    transition: all .5s ease;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.imc-result {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.imc-result p {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 38px;
+}
+
+
+/* -- MEDIA QUERIES */
+@media (max-width: 600px) {
+    .main-title h1 {
+        font-size: 55px;
+    }
+
+    .main-title p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 460px) {
+    .input-area {
+        padding: 0px 10px;
+    }
+}

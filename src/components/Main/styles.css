@@ -58,6 +58,12 @@ main {
     color: var(--white);
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 button {
     cursor: pointer;
     color: var(--white);

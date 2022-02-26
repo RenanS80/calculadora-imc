@@ -8,23 +8,26 @@ function Main() {
     const [message, setMessage] = useState('');
 
     function calculaImc() {
-        const hei = height / 100;
-        const imc = weight / (hei * hei);
+        const hei = Number(height / 100);
+        const imc = Number(weight / (hei * hei));
+        
+        console.log(typeof hei)
+        console.log(typeof imc)
 
         if (imc < 18.5) {
-            setMessage('Seu IMC está abaixo do normal! IMC: ' + imc.toFixed(2))
+            setMessage('Seu peso está abaixo do recomendado. IMC: ' +imc.toFixed(2))
         }
         else if (imc >= 18.5 && imc <= 24.9) {
-            setMessage('Seu IMC está ideal! IMC: ' + imc.toFixed(2))
+            setMessage('Seu peso está normal. IMC: ' +imc.toFixed(2))
         }
         else if (imc >= 25.0 && imc <= 29.9) {
-            setMessage('Você está com sobrepeso! IMC: ' + imc.toFixed(2))
+            setMessage('Você está com sobrepeso. IMC: ' +imc.toFixed(2))
         }
         else if (imc >= 30.0 && imc <= 39.9) {
-            setMessage('Você está com obesidade! IMC: ' + imc.toFixed(2))
+            setMessage('Você está com obesidade. IMC: ' +imc.toFixed(2))
         }
         else {
-            setMessage('Você está com obesidade grave! IMC: ' + imc.toFixed(2))
+            setMessage('Você está com obesidade grave. IMC: ' +imc.toFixed(2))
         }
     }
 
@@ -38,19 +41,19 @@ function Main() {
                     </div>
 
                     <div className="input-area">
-                        <label for="weight">Peso</label>
+                        <label htmlFor="weight">Peso</label>
                         <input
                             id="weight"
-                            type="text"
+                            type="number"
                             placeholder="Informe o seu peso (kg)"
                             value={weight}
                             onChange={ e => setWeight(e.target.value)}
                         />
 
-                        <label for="height">Altura</label>
+                        <label htmlFor="height">Altura</label>
                         <input
                             id="height"
-                            type="text"
+                            type="number"
                             placeholder="Informe a sua altura (cm)"
                             value={height}
                             onChange={ e => setHeight(e.target.value)}

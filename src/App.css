@@ -9,10 +9,14 @@
 :root {
     --white: #FFF;
     --black: #121212;
+    --gray: #D7D8DA;
     --blue: #357AFF;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--black);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }

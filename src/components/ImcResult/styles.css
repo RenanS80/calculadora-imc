@@ -1,0 +1,10 @@
+.imc-result {
+    background: var(--blue);
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 180px;
+    margin: 40px 0;
+}

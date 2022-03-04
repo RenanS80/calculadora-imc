@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import ImcResult from '../ImcResult';
+import TableResult from '../TableResult';
 import './styles.css';
 
 function Main() {
@@ -61,9 +63,8 @@ function Main() {
 
                         <button onClick={calculaImc}>Calcular</button>
 
-                        <div className="imc-result">
-                            <p>{message}</p>
-                        </div>
+                        <TableResult />
+                        <ImcResult />
                     </div>
                 </div>
             </div>

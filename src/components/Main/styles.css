@@ -1,5 +1,6 @@
 main {
-    height: calc(100vh - 80px)
+    /* height: calc(100vh - 80px) */
+    height: 100%;
 }
 
 .main-container {
@@ -9,6 +10,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid red;
 }
 
 
@@ -81,7 +83,7 @@ button:hover {
     opacity: 0.9;
 }
 
-.imc-result {
+/* .imc-result {
     margin-top: 50px;
     text-align: center;
 }
@@ -90,7 +92,7 @@ button:hover {
     font-weight: bold;
     font-size: 22px;
     line-height: 38px;
-}
+} */
 
 
 /* -- MEDIA QUERIES */
@@ -105,6 +107,10 @@ button:hover {
 }
 
 @media (max-width: 460px) {
+    .main-title {
+        padding: 0px 15px;
+    }
+
     .input-area {
         padding: 0px 10px;
     }
